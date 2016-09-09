@@ -1,8 +1,9 @@
 package client.controller;
 
-import java.io.IOException;
+import java.nio.file.Path;
 
 public interface IGraphFileGenerator {
 
-	void generateGraphFile( int lenght, int width, byte density ) throws IOException;
+	Path generateGraphFile( int lenght, int width, byte density );
+	
 }
